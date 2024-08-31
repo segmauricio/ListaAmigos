@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  fecha_cumpleanos: 2024-08-30
+
+two:
+  nombre: MyString
+  fecha_cumpleanos: 2024-08-30
