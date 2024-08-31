@@ -1,0 +1,12 @@
+<h1>Lista de Amigos</h1>
+<%= link_to 'Añadir Amigo', new_amigo_path %>
+
+<ul>
+  <% @amigos.each do |amigo| %>
+    <li>
+      <%= amigo.nombre %> - <%= amigo.fecha_cumpleanos %>
+      <%= link_to 'Editar', edit_amigo_path(amigo) %> |
+      <%= link_to 'Eliminar', amigo, method: :delete, data: { confirm: '¿Estás seguro?' } %>
+    </li>
+  <% end %>
+</ul>
